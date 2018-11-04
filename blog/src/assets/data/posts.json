@@ -1,0 +1,16 @@
+[
+    {
+        "idPost" : 1,
+        "title" : "Title 1",
+        "resume":"loren ipsun xxxxxxxxxxx",
+        "post" : "loren ipsun xxxxxxxxxxx loren ipsun xxxxxxxxxxxloren ipsun xxxxxxxxxxxloren ipsun xxxxxxxxxxxloren ipsun xxxxxxxxxxx",
+        "timestamp": "2018-05-11 14:30:22"
+    },
+    {
+        "idPost" : 2,
+        "title" : "Title 2",
+        "resume":"loren ipsun yyyyyyyyyyyyyyy",
+        "post" : "yyyyyyyyyyyyyyyyyyyyyddddddd dsaddsjlhf sdkjsdhkfjdshkjfhsdkjhfjdsy",
+        "timestamp": "2018-02-10 12:30:22"
+    }
+]

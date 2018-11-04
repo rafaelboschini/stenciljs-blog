@@ -1,7 +1,7 @@
 {
-  "name": "my-component",
+  "name": "blog-item",
   "version": "0.0.1",
-  "description": "Stencil Component Starter",
+  "description": "Stencil Component - Blog Post View",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
   "types": "dist/types/components.d.ts",
@@ -10,23 +10,18 @@
     "dist/"
   ],
   "scripts": {
-    "build": "stencil build",
-    "start": "stencil build --dev --watch --serve",
-    "test": "stencil test --spec --e2e",
-    "test.watch": "stencil test --spec --e2e --watchAll"
+    "build": "stencil build"
   },
   "dependencies": {},
   "devDependencies": {
-    "@stencil/core": "~0.15.1"
+    "@stencil/core": "~0.15.1",
+    "@stencil/sass": "^0.1.1",
+    "@stencil/utils": "0.0.5"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ionic-team/stencil-component-starter.git"
   },
-  "author": "Ionic Team",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ionic-team/stencil"
-  },
-  "homepage": "https://github.com/ionic-team/stencil"
+  "author": "RBOSCHINI",
+  "license": "MIT"
 }

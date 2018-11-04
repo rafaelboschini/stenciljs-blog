@@ -13,14 +13,17 @@ import '@stencil/core';
 export namespace Components {
 
   interface BlogItem {
-    'first': string;
-    'last': string;
-    'middle': string;
+    'idPost': string;
+    'resume': string;
+    'timestamp': Date;
+    'titlePost': string;
   }
   interface BlogItemAttributes extends StencilHTMLAttributes {
-    'first'?: string;
-    'last'?: string;
-    'middle'?: string;
+    'idPost'?: string;
+    'onOnClickEvent'?: (event: CustomEvent) => void;
+    'resume'?: string;
+    'timestamp'?: Date;
+    'titlePost'?: string;
   }
 }
 

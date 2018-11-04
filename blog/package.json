@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "@stencil/core": "~0.15.1",
-    "@stencil/router": "~0.3.0"
+    "@stencil/router": "~0.3.0",
+    "blog-item": "file:../blog-item",
+    "blog-preview": "^1.1.0"
   },
   "repository": {
     "type": "git",
@@ -22,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/ionic-team/stencil"
   },
-  "homepage": "https://github.com/ionic-team/stencil"
+  "homepage": "https://github.com/ionic-team/stencil",
+  "devDependencies": {
+    "@stencil/sass": "^0.1.1"
+  }
 }

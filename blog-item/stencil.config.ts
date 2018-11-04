@@ -1,17 +1,18 @@
 import { Config } from '@stencil/core';
+import { sass } from '@stencil/sass';
 
-export const config: Config = {
-  namespace: 'blogitemcomponent',
-  outputTargets:[
-    {
-      type: 'dist'
-    },
-    {
-      type: 'www',
-      serviceWorker: null
-    }
+/*
+  generateDistribution: true,
+  generateWWW: false,
+*/
+
+exports.config = {
+  namespace: 'rboschini-components',
+  outputTargets: [
+    { type: 'dist' }
   ],
-  devServer: {
-    port: 4000
-  }
+  bundles: [{ components: ['blog-item'] }],
+  plugins: [
+    sass()
+  ]
 };
