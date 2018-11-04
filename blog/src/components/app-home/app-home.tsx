@@ -13,11 +13,9 @@ export class AppHome {
   @State() postsData: any[] = [];
 
   componentWillLoad() {
-    console.log('omponentWillLoad');
     fetch(`${this.apiRootUrl}/posts.json`).then((response: any) => {
       return response.json()
     }).then((data) => {
-      console.log('Data result',data);
       this.postsData = data;
     });
   }
@@ -25,23 +23,17 @@ export class AppHome {
   render() {
 
     return (
-      <div class='app-home'>
+      <div class='blog-item-box'>
         {
           this.postsData.map((post) => 
             <blog-item 
-            titlePost={post.title}
+            titlepost={post.title}
             resume={post.title}
             idPost={post.idPost}
             onClick={(event: UIEvent) => this.clickPost(event)}>
             </blog-item>
           )
         }
-
-        <stencil-route-link url='/profile/stencil'>
-          <button>
-            Profile page
-          </button>
-        </stencil-route-link>
       </div>
     );
   }

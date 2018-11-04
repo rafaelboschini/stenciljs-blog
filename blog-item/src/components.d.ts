@@ -16,14 +16,14 @@ export namespace Components {
     'idPost': string;
     'resume': string;
     'timestamp': Date;
-    'titlePost': string;
+    'titlepost': string;
   }
   interface BlogItemAttributes extends StencilHTMLAttributes {
     'idPost'?: string;
     'onOnClickEvent'?: (event: CustomEvent) => void;
     'resume'?: string;
     'timestamp'?: Date;
-    'titlePost'?: string;
+    'titlepost'?: string;
   }
 }
 
