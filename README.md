@@ -14,11 +14,15 @@ We can also develop and test each component in a unique way.
 # Structure
 
 ```
- BLOG___________
-|  ___________  |
-| | Blog-item | |
-| |___________| |
-|_______________|
+ BLOG__________________
+|  ___________   ____  |<--- app main
+| | Blog-item | |Wdgt| |
+| |           | |    |<---Internal component
+| |___________| |____| |
+|___^__________________|
+    |
+    |
+    External component
 ```
 
 You will find 2 folders, one from the parent project called blog and another from the blog-item component.
