@@ -1,0 +1,37 @@
+$urlBkg: 'https://st.depositphotos.com/1149789/2551/i/950/depositphotos_25513633-stock-photo-vintage-old-paper.jpg';
+$colorBkg: #fff5d7;
+
+.profile-widget{
+    background: url($urlBkg) no-repeat;
+    -webkit-background-size: 100%;
+    background-position: 0px -150px;
+    background-size: 263px;
+    background-color: $colorBkg;
+    color: #3d4344;
+    max-width: 250px;
+
+    .profile-widget-content{
+        padding-bottom: 13px;
+        padding-top: 8%;
+        text-align: center;
+        width: 100%;
+
+        h2{
+            font-family: 'Italianno', cursive;
+        }
+    }
+
+    img{
+        display: inline-block;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        margin-top: 40px;
+        width: 120px;
+    }
+}
+
+@media all and (max-width: 450px) {
+    .profile-widget{
+        margin: 10px auto 0 auto;
+    }
+}

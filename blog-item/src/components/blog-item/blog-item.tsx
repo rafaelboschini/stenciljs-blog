@@ -14,6 +14,8 @@ export class BlogItemComponent {
   @Event() onClickEvent: EventEmitter;
   
   render() {
+    console.log('timestamp', this.timestamp);
+
     return (
         <article class="blog-item" 
           data-idpost="{this.idPost}" 
@@ -37,6 +39,7 @@ export class BlogItemComponent {
           </header>    
           <div class="blog-item-body entry-content">
             {this.resume}
+            <a>read more</a>
           </div>
           <div class="or-spacer">
             <div class="mask"></div>

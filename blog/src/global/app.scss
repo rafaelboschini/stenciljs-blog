@@ -1,36 +1,106 @@
-/*
-  Global App CSS
-  ----------------------
-  Use this file for styles that should be applied to all components.
-  For example, "font-family" within the "body" selector is a CSS property
-  most apps will want applied to all components.
-
-  Any global CSS variables should also be applied here.
-*/
-
-html {
-  height: 100%;
-  font-size: 100%;
+.container {
+  display: flex;
+  flex-flow: row wrap;
 }
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  margin: 0;
-  padding: 0;
-  vertical-align: baseline;
+.header, .blog, .sidebar, .footer {
+  flex-grow: 1;
+  flex-basis: 100%;
 }
 
-.clearfix {
-  overflow: auto;
+@media all and (max-width: 450px) {
+  .container{
+    .header{
+      &::before{
+        height: 113px;
+      }
+
+      h1{
+        font-size: 30px;
+      }
+
+      span{
+        font-size: 20px;
+      }
+    }
+  }
+  .content-container{
+    flex-direction: column;
+    
+    .blog { 
+      width: 100%;
+    }
+  
+    .sidebar { flex: 1 0px; }
+  }
+}
+
+@media all and (min-width: 600px) {
+  .blog { 
+    flex: 2 0px;
+  }
+
+  .sidebar { flex: 1 0px; }
+}
+
+@media all and (min-width: 800px) {
+  .blog { flex: 3 0px; }
+  .sidebar { flex: 1 0px; }
 }
 
 body {
+  padding: 0;
+  margin: 0;
   -webkit-font-smoothing: antialiased;
   background: #1d2022 url(../assets/img/background.jpg) 0 0 repeat fixed;
   color: #444444;
-  font-family: Maitree,Arial,Helvetica,sans-serif;
-  font-size: 100%;
-  line-height: 1.375em;
+}
+
+.header{
+  color: #fff;
+  text-align: center;
+  font-family: 'Calligraffitti', cursive;
+  margin: 0 0 30px 0;
+
+  &::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;    
+    height: 140px;
+    background-color: rgba(255, 255, 255, 0.3);
+    top: 14px;
+  }
+
+  h1{
+    margin: 0;
+    padding-top:40px;
+    letter-spacing: 8px;
+    font-size: 40px;
+  }
+  span{
+    font-family: 'Italianno', cursive;
+    font-size: 28px;
+    letter-spacing: 5px;
+
+  }
+}
+
+
+
+.container{
+  .content-container{
+    display: flex;
+    margin:auto;
+    max-width: 1024px;
+    width: 1024px;
+
+    .sidebar{
+      padding-right:5px;
+    }
+    
+    .blog{
+      padding-right: 15px;
+    }
+  }
 }

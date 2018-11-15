@@ -1,8 +1,13 @@
+// Google Fonts
+@import url(https://fonts.googleapis.com/css?family=Niconne|Ubuntu);
 
 .blog-item{
     width: 100%;
-    max-width: 642px;   
-   
+    max-width: 642px;
+    margin: auto;
+    background-color: #fff;
+    padding-bottom: 30px;
+    
     header{
         display: flex;
         flex-direction: column;
@@ -15,7 +20,7 @@
             box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, .6);
             border: 1px solid #fff;
             position: relative;
-            max-width: 100%;
+            max-width: -webkit-fill-available;
             height: auto;
             vertical-align: middle;
         }
@@ -31,20 +36,21 @@
             .blog-item-datebox {
                 background-color: #3d4344;
                 color: #fff;
-                width: 67px;
-                height: 67px;
-                left: 50%;
-                position: relative;
-                text-align: center;
+                width: 70px;
+                height: 70px;
+                margin: 0 auto;
                 text-transform: uppercase;
                 border-radius: 70px;
-                box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, .6);
+                box-shadow: 0 10px 30px 0 rgba(0,0,0,.6);
                 font-family: Oswald;
-        
+                padding-top: 1px;
+                font-family: 'Ubuntu', sans-serif;
+
                 &__month{
                     margin-top: 3px;
                     display: block;
-                    font-size: 13px;                    
+                    font-size: 13px;
+                                   
                 }
         
                 &__day{
@@ -63,7 +69,10 @@
         .blog-item-title{
             text-align: center;
             color: #3c4243;
-            font-size: 'Arial';
+            font-size: 30px;
+            word-spacing: 5px;
+            letter-spacing: 2px;
+            font-family: Niconne,cursive;
         }
     }
 
@@ -71,12 +80,23 @@
         padding-left: 33px;
         font-size: 15px;
         color: #757575;
-        font-family: 'Verdana';
+        font-family: 'Ubuntu', sans-serif;
+
+        a{
+            display: block;
+            text-align: right;
+            margin-right: 50px;
+            margin-top: 20px;
+            cursor: pointer;            
+        }
     }
 
     .or-spacer {
-        margin-top:100px; margin-left:100px; width:400px; 
-        position:relative; 
+        margin-top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        position: relative;
         
         .mask { 
           overflow:hidden; height:20px; 

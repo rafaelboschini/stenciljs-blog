@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/ionic-team/stencil",
   "devDependencies": {
-    "@stencil/sass": "^0.1.1"
+    "@stencil/sass": "^0.1.1",
+    "workbox-build": "3.4.1"
   }
 }
